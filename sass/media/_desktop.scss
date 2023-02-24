@@ -121,6 +121,127 @@
         overflow: hidden;
     }
 
+    #main {
+        display: grid;
+        grid-template-columns: 1fr .1fr;
+        grid-template-rows: 372px auto 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        margin-top: 60px;
+        //border: 1px solid black;
+
+        .div1 {
+            grid-area: 1 / 1 / 2 / 3;
+            //border: 1px solid black;
+            width: 100%;
+            height: 372px;
+
+            img {
+                width: 100%;
+                height: 372px;
+                object-fit: cover;
+                aspect-ratio: 4/3;
+            }
+
+        }
+
+        .div2 {
+            grid-area: 2 / 1 / 3 / 2;
+            //border: 1px solid black;
+            padding: 25px;
+
+            .card {
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+
+                .card-body {
+
+                    .card-title {
+                        font-weight: bold;
+                        font-size: 25px;
+                        border-bottom: 1px solid #B02A37;
+                    }
+
+                    .card-text {
+                        padding-top: 10px;
+
+                    }
+                }
+            }
+        }
+
+        .div3 {
+            grid-area: 3 / 1 / 4 / 3;
+            background-color: #dad7d7;
+            //border: 1px solid black;
+            margin-top: 60px;
+            margin-bottom: -20px;
+
+            .card {
+                background-color: transparent;
+            }
+        }
+
+        .div4 {
+            grid-area: 1 / 2 / 3 / 3;
+            margin-top: 10px;
+            margin-right: 10px;
+            //border: 1px solid black;
+
+            .card {
+                /* From https://css.glass */
+                background: rgba(255, 255, 255, 0.89);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5.6px);
+                -webkit-backdrop-filter: blur(5.6px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+
+                .card-body {
+
+
+
+                    .card-title {
+                        font-weight: bold;
+                        font-size: 20px;
+                        color: black;
+                        border-bottom: 1px solid #B02A37;
+                    }
+
+                    .pdf {
+                        /* From https://css.glass */
+                        background: rgba(255, 255, 255, 0.2);
+                        border-radius: 16px;
+                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                        backdrop-filter: blur(12.2px);
+                        -webkit-backdrop-filter: blur(12.2px);
+                        border: 1px solid rgba(255, 255, 255, 0.3);
+
+                        padding: 8px;
+                        border-radius: 5px;
+                        margin-top: 16px;
+
+                        text-decoration: none;
+
+
+                        color: black;
+
+                        font-weight: bold;
+
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
     footer {
         margin-top: 20px;
         background-color: #34495E;
