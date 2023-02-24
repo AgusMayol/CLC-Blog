@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+*,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  vertical-align: baseline;
+}
+
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 !important;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html body {
+  font-family: "Inter", Helvetica, sans-serif;
+}
+html body::-webkit-scrollbar-thumb {
+  background-color: #6E6E6E;
+  /* color of the scroll thumb */
+  border-radius: 9px;
+  /* roundness of the scroll thumb */
+  border: 2px solid white;
+  /* creates padding around scroll thumb */
+}
+html body::-webkit-scrollbar {
+  width: 9px;
+  /* width of the entire scrollbar */
+}
+
+@media (min-width: 1024px) {
+  header {
+    height: 60px;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background-color: #B02A37;
+    transition: all 0.15s linear;
+    height: 60px;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    list-style-type: none;
+  }
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.15s linear;
+  }
+  header nav ul li a:hover {
+    color: #B02A37 !important;
+    transition: all 0.15s linear;
+  }
+  header .header-activo {
+    background-color: white;
+    border-bottom: 1px solid #c6c6c6;
+    transition: all 0.15s linear;
+  }
+  header .header-activo ul li a {
+    color: #222020;
+    transition: all 0.15s linear;
+  }
+  header nav:hover {
+    background-color: white;
+    border-bottom: 1px solid #c6c6c6;
+    transition: all 0.15s linear;
+  }
+  header nav:hover ul li a {
+    color: #222020;
+    transition: all 0.15s linear;
+  }
+  #logo {
+    width: 110px;
+    height: 45px;
+    margin-top: 5px;
+    margin-left: 30px;
+  }
+  #blank {
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+  .FP-h1 {
+    background-color: #B02A37;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 60px;
+    padding-left: 65px;
+  }
+  .FP-h1 h1 {
+    font-size: 96px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+  }
+  #contenedor-iframe {
+    position: relative;
+    padding-bottom: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  footer {
+    margin-top: 20px;
+    background-color: #34495E;
+  }
+  footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 15px 30px;
+    padding-bottom: 30px;
+    background-color: #34495E;
+  }
+  footer nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    gap: 4px;
+  }
+  footer nav ul li {
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+  }
+  footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 15px;
+  }
+  footer nav ul li a:hover {
+    color: #B02A37;
+    text-decoration: underline;
+  }
+  footer nav ul li:first-child {
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */

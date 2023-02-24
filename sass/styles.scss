@@ -1,0 +1,20 @@
+// Variables globales
+@import "./global/gv";
+
+// Fonts
+@import "./global/fonts";
+
+//  Resets
+@import "./global/resets";
+
+
+// -----[ Media queries ]-----
+
+// Mobile [First]
+@import "./media/mobile";
+
+// Tablet
+@import "./media/tablet";
+
+// desktop
+@import "./media/desktop";
